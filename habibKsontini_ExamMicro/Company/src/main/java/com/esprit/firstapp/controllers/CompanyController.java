@@ -49,7 +49,7 @@ public class CompanyController {
 	}
 
 	@PatchMapping("/update/{id}")
-	public Company patchUpdateItem(@PathVariable Long id, @RequestBody Map<String, Object> updates) {
+	public Company patchUpdateEmployee(@PathVariable Long id, @RequestBody Map<String, Object> updates) {
 		return companyService.updateCompany(id, updates);
 
 	}
